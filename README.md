@@ -38,17 +38,43 @@ If the output is 1, then the led glows.
 Program:
 /*
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: Hycinth D
+RegisterNumber:23006688  
 */
-Logic symbol & Truthtable
-RTL realization
+##Code
 
-### Output:
-### RTL
-### TIMING DIAGRAM
+module Hycinth(x,y,s,c);
+input x,y;
+output s,c;
+xor(s,x,y);
+and(c,x,y);
+endmodule
 
+module full_adder(x, y, z, s, c, x1, x2, x3);
+input x,  y,z;
+output s ,c, x1, x2, x3;
+xor(x1, x, y);
+xor(s, x1, z);
+and(x2, x, y);
+and(x3, x1, z);
+or(c, x2, x3);
+endmodule
 
-### TRUTH TABLE 
+##Truth Table
 
-### Result:
+![image](https://github.com/HycinthD/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/144870810/7d0d8513-8fa8-4612-a1ee-895a84b250ce)
+![image](https://github.com/HycinthD/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/144870810/7ac27403-4991-46d5-b82f-548ec0a84d91)
+
+## RTL Diagram
+
+![image](https://github.com/HycinthD/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/144870810/0ff3d257-8c75-4e5b-988a-d75416b015e6)
+
+Result:
+Therefore,half adder and full adder is verified
+![image](https://github.com/HycinthD/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/144870810/cf766324-1140-4ba3-bb84-6c80584d83f5)
+
+## Timing Diagram
+
+![image](https://github.com/HycinthD/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/144870810/8dfb85fa-5a1c-407e-90ba-86d91a50a9c5)
+![image](https://github.com/HycinthD/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/144870810/8c401faa-f31b-4a7d-bbcc-a553636511bf)
+
