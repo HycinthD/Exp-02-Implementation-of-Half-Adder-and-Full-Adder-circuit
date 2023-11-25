@@ -71,6 +71,9 @@ endmodule
 
 Result:
 Therefore,half adder and full adder is verified
+
+Result:
+Therefore,half adder and full adder is verified
 ![image](https://github.com/HycinthD/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/144870810/cf766324-1140-4ba3-bb84-6c80584d83f5)
 
 ## Timing Diagram
